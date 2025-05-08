@@ -1,0 +1,172 @@
+/* Variables CSS */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --dark-color: #2c3e50;
+    --light-color: #ecf0f1;
+    --spacing: 1rem;
+    --border-radius: 4px;
+}
+
+.variables-example {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing);
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+}
+
+/* Funciones CSS */
+.functions-example {
+    width: calc(100% - 40px);
+    height: calc(50px + 2rem);
+    background-color: var(--secondary-color);
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    color: white;
+}
+
+/* Grid avanzado */
+.advanced-grid-example {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.advanced-grid-example .grid-item {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 1rem;
+    min-height: 100px;
+}
+
+/* Flexbox avanzado */
+.advanced-flex-example {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.advanced-flex-example .flex-item {
+    flex: 1 1 200px;
+    background-color: var(--dark-color);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Design */
+.responsive-example {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .responsive-example {
+        background-color: var(--secondary-color);
+    }
+}
+
+/* Scroll Snap */
+.scroll-snap-example {
+    height: 300px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+}
+
+.scroll-item {
+    height: 300px;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.scroll-item:nth-child(1) {
+    background-color: var(--primary-color);
+}
+
+.scroll-item:nth-child(2) {
+    background-color: var(--secondary-color);
+}
+
+.scroll-item:nth-child(3) {
+    background-color: #e74c3c;
+}
+
+/* Clipping y Masking */
+.clip-mask-example {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
+    clip-path: circle(50% at 50% 50%);
+    transition: clip-path 0.5s ease;
+}
+
+.clip-mask-example:hover {
+    clip-path: circle(70% at 50% 50%);
+}
+
+.clip-mask-example img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Container Queries */
+.container-query-example {
+    container-type: inline-size;
+    margin-bottom: 2rem;
+}
+
+.component {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+@container (min-width: 300px) {
+    .component {
+        background-color: var(--secondary-color);
+    }
+}
+
+/* Filtros */
+.filter-example {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
+    overflow: hidden;
+}
+
+.filter-example img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.5s ease;
+}
+
+.filter-example:hover img {
+    filter: grayscale(100%) brightness(0.8);
+}
+
+/* Optimización */
+.optimization-example {
+    will-change: transform;
+    background-color: var(--dark-color);
+    color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}

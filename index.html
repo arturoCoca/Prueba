@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Completa de HTML y CSS</title>
+    <!-- CSS Básico -->
+    <link rel="stylesheet" href="css/basic.css">
+    <!-- CSS Avanzado -->
+    <link rel="stylesheet" href="css/advanced.css">
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Estructura semántica (HTML Básico 10) -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">HTML<span>CSS</span></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#html-basico">HTML Básico</a></li>
+                    <li><a href="#html-avanzado">HTML Avanzado</a></li>
+                    <li><a href="#css-basico">CSS Básico</a></li>
+                    <li><a href="#css-avanzado">CSS Avanzado</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <h1>Guía Completa de HTML y CSS</h1>
+                <p>Domina los conceptos básicos y avanzados de desarrollo web</p>
+                <a href="#html-basico" class="btn">Comenzar</a>
+            </div>
+        </section>
+
+        <!-- HTML Básico -->
+        <section id="html-basico" class="section">
+            <div class="container">
+                <h2>HTML Básico</h2>
+                
+                <article class="html-example">
+                    <h3>1. Estructura básica</h3>
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Documento HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Contenido --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </article>
+
+                <article class="html-example">
+                    <h3>2. Etiquetas principales</h3>
+                    <p>Las etiquetas <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> y <code>&lt;body&gt;</code> forman la estructura básica.</p>
+                </article>
+
+                <article class="html-example">
+                    <h3>3. Formateo de texto</h3>
+                    <p>Este es un párrafo normal.</p>
+                    <h1>Encabezado 1</h1>
+                    <h2>Encabezado 2</h2>
+                    <p><strong>Texto en negrita</strong> y <em>texto en cursiva</em>.</p>
+                    <hr>
+                </article>
+
+                <article class="html-example">
+                    <h3>4. Listas</h3>
+                    <h4>Lista no ordenada</h4>
+                    <ul>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                    </ul>
+                    
+                    <h4>Lista ordenada</h4>
+                    <ol>
+                        <li>Primer elemento</li>
+                        <li>Segundo elemento</li>
+                    </ol>
+                </article>
+
+                <article class="html-example">
+                    <h3>5. Imágenes</h3>
+                    <img src="images/descarga.jpeg" alt="Ejemplo de imagen" width="300">
+                </article>
+
+                <article class="html-example">
+                    <h3>6. Enlaces</h3>
+                    <a href="https://www.facebook.com/" target="_blank">Enlace externo</a>
+                </article>
+
+                <article class="html-example">
+                    <h3>7. Tablas</h3>
+                    <table>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                        </tr>
+                        <tr>
+                            <td>Juan</td>
+                            <td>25</td>
+                        </tr>
+                    </table>
+                </article>
+
+                <article class="html-example">
+                    <h3>8. Formularios básicos</h3>
+                    <form>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                        <button type="submit">Enviar</button>
+                    </form>
+                </article>
+
+                <article class="html-example">
+                    <h3>9. Comentarios</h3>
+                    <p>Los comentarios en HTML se escriben así: <code>&lt;!-- Esto es un comentario --&gt;</code></p>
+                </article>
+            </div>
+        </section>
+
+        <!-- HTML Avanzado -->
+        <section id="html-avanzado" class="section">
+            <div class="container">
+                <h2>HTML Avanzado</h2>
+                
+                <article class="html-advanced">
+                    <h3>1. Atributos globales</h3>
+                    <div id="ejemplo-id" class="ejemplo-clase" data-info="ejemplo" title="Ejemplo de tooltip">
+                        Elemento con atributos globales
+                    </div>
+                </article>
+
+                <article class="html-advanced">
+                    <h3>2. Template y slot</h3>
+                    <template id="plantilla">
+                        <p><slot name="texto">Texto predeterminado</slot></p>
+                    </template>
+                </article>
+
+                <article class="html-advanced">
+                    <h3>3. Multimedia</h3>
+                    <video controls width="300">
+                        <source src="video.mp4" type="video/mp4">
+                        Tu navegador no soporta video.
+                    </video>
+                    
+                    <audio controls>
+                        <source src="audio.mp3" type="audio/mpeg">
+                    </audio>
+                </article>
+
+                <article class="html-advanced">
+                    <h3>4. SVG y Canvas</h3>
+                    <svg width="100" height="100">
+                        <circle cx="50" cy="50" r="40" fill="blue" />
+                    </svg>
+                    
+                    <canvas id="miCanvas" width="100" height="100"></canvas>
+                </article>
+
+                <article class="html-advanced">
+                    <h3>5. Formularios avanzados</h3>
+                    <form id="form-avanzado">
+                        <input type="email" placeholder="Correo electrónico" required>
+                        <input type="range" min="0" max="100">
+                        <input type="date">
+                        <input type="color">
+                        <button type="submit">Enviar</button>
+                    </form>
+                </article>
+
+                <article class="html-advanced">
+                    <h3>6. APIs HTML5</h3>
+                    <div id="geolocation" class="api-example">
+                        <button id="btn-geo">Obtener ubicación</button>
+                    </div>
+                    
+                    <div id="drag-drop" class="api-example" draggable="true">
+                        Arrástrame
+                    </div>
+                </article>
+
+                <article class="html-advanced">
+                    <h3>7. Microdatos</h3>
+                    <div itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="name">Juan Pérez</span>
+                    </div>
+                </article>
+
+                <article class="html-advanced">
+                    <h3>9. Accesibilidad (ARIA)</h3>
+                    <button aria-label="Cerrar menú">X</button>
+                    <div role="alert">Mensaje importante</div>
+                </article>
+
+                <article class="html-advanced">
+                    <h3>10. SEO</h3>
+                    <meta name="description" content="Descripción de la página">
+                    <meta name="keywords" content="HTML, CSS, web">
+                </article>
+            </div>
+        </section>
+
+        <!-- CSS Básico -->
+        <section id="css-basico" class="section">
+            <div class="container">
+                <h2>CSS Básico</h2>
+                
+                <article class="css-basic">
+                    <h3>1. Selectores</h3>
+                    <div class="selector-example">
+                        <p class="texto-ejemplo">Texto con clase</p>
+                        <p id="texto-unico">Texto con ID</p>
+                    </div>
+                </article>
+
+                <article class="css-basic">
+                    <h3>2. Texto y fuentes</h3>
+                    <p class="text-example">Ejemplo de texto con estilos</p>
+                </article>
+
+                <article class="css-basic">
+                    <h3>3. Box Model</h3>
+                    <div class="box-model-example">
+                        Ejemplo de modelo de caja
+                    </div>
+                </article>
+
+                <article class="css-basic">
+                    <h3>4. Colores y fondos</h3>
+                    <div class="color-example">
+                        Ejemplo de colores
+                    </div>
+                </article>
+
+                <article class="css-basic">
+                    <h3>5. Unidades de medida</h3>
+                    <div class="units-example">
+                        Ejemplo con diferentes unidades
+                    </div>
+                </article>
+
+                <article class="css-basic">
+                    <h3>6. Posicionamiento</h3>
+                    <div class="positioning-example">
+                        <div class="box static">Static</div>
+                        <div class="box relative">Relative</div>
+                        <div class="box absolute">Absolute</div>
+                        <div class="box fixed">Fixed</div>
+                        <div class="box sticky">Sticky</div>
+                    </div>
+                </article>
+
+                <article class="css-basic">
+                    <h3>7. Flexbox</h3>
+                    <div class="flexbox-example">
+                        <div class="flex-item">1</div>
+                        <div class="flex-item">2</div>
+                        <div class="flex-item">3</div>
+                    </div>
+                </article>
+
+                <article class="css-basic">
+                    <h3>8. Grid Layout</h3>
+                    <div class="grid-example">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                    </div>
+                </article>
+
+                <article class="css-basic">
+                    <h3>9. Pseudo-clases</h3>
+                    <button class="pseudo-example">Pasa el ratón</button>
+                </article>
+
+                <article class="css-basic">
+                    <h3>10. Transiciones</h3>
+                    <div class="transition-example">
+                        Pasa el ratón
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CSS Avanzado -->
+        <section id="css-avanzado" class="section">
+            <div class="container">
+                <h2>CSS Avanzado</h2>
+                
+                <article class="css-advanced">
+                    <h3>1. Variables CSS</h3>
+                    <div class="variables-example">
+                        Ejemplo con variables
+                    </div>
+                </article>
+
+                <article class="css-advanced">
+                    <h3>2. Funciones CSS</h3>
+                    <div class="functions-example">
+                        Ejemplo con calc()
+                    </div>
+                </article>
+
+                <article class="css-advanced">
+                    <h3>3. Grid avanzado</h3>
+                    <div class="advanced-grid-example">
+                        <div class="grid-item">1</div>
+                        <div class="grid-item">2</div>
+                        <div class="grid-item">3</div>
+                    </div>
+                </article>
+
+                <article class="css-advanced">
+                    <h3>4. Flexbox avanzado</h3>
+                    <div class="advanced-flex-example">
+                        <div class="flex-item">1</div>
+                        <div class="flex-item">2</div>
+                        <div class="flex-item">3</div>
+                    </div>
+                </article>
+
+                <article class="css-advanced">
+                    <h3>5. Responsive Design</h3>
+                    <div class="responsive-example">
+                        Cambia el tamaño de la pantalla
+                    </div>
+                </article>
+
+                <article class="css-advanced">
+                    <h3>6. Scroll Snap</h3>
+                    <div class="scroll-snap-example">
+                        <div class="scroll-item">1</div>
+                        <div class="scroll-item">2</div>
+                        <div class="scroll-item">3</div>
+                    </div>
+                </article>
+
+                <article class="css-advanced">
+                    <h3>7. Clipping y Masking</h3>
+                    <div class="clip-mask-example">
+                        <img src="images/descarga.jpeg" alt="Ejemplo">
+                    </div>
+                </article>
+
+                <article class="css-advanced">
+                    <h3>8. Container Queries</h3>
+                    <div class="container-query-example">
+                        <div class="component">Componente adaptable</div>
+                    </div>
+                </article>
+
+                <article class="css-advanced">
+                    <h3>9. Filtros</h3>
+                    <div class="filter-example">
+                        <img src="images/descarga.jpeg" alt="Ejemplo con filtros">
+                    </div>
+                </article>
+
+                <article class="css-advanced">
+                    <h3>10. Optimización</h3>
+                    <div class="optimization-example">
+                        Ejemplo de técnicas de optimización
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 Guía HTML y CSS</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
